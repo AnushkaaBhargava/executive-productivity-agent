@@ -57,13 +57,3 @@ When asked by the interviewer, here are the 4 critical findings derived from the
    - *Trail:* Divya Rao delivered the report on Wednesday at 6:00 PM; Arjun confirmed receipt at 6:10 PM. Ready for board prep.
 
 ---
-
-## 💬 Interview Cheatsheet: How to Explain Your Code
-
-If the interviewer asks:
-- **"How does the agent avoid hallucinations?"**  
-  *"The agent only pulls from the structured data in `server/data/data.js`. If an answer isn't grounded in one of the 4 sources (Meeting transcript, calendars, email threads, voice notes), it is not included. Every answer also returns the exact source."*
-- **"How is the project structured?"**  
-  *"It's a monorepo with `server/` running Express and `client/` running React with Vite. In production, Express directly serves the built React frontend on port 5000 so anyone can run it with a single command."*
-- **"What proactive intelligence did you add?"**  
-  *"Beyond basic task listing, I detected the hidden Thursday 9:30 AM calendar conflict between Board Prep and Neha's Deck Review, and flagged the Friday EOD Mumbai lease deadline that was about to slip without an owner."*
