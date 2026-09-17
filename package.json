@@ -1,0 +1,25 @@
+{
+  "name": "executive-productivity-agent",
+  "version": "1.0.0",
+  "description": "Executive Productivity Agent for Arjun Malhotra (VP Sales) - AIONOS Assignment",
+  "main": "server/index.js",
+  "scripts": {
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build:client": "npm --prefix client run build",
+    "build": "npm run build:client",
+    "start": "node server/index.js"
+  },
+  "keywords": [
+    "ai-agent",
+    "executive-productivity",
+    "grounded-ai",
+    "aionos"
+  ],
+  "author": "Anushkaa Bhargava",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}
