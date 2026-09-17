@@ -1,59 +1,53 @@
 # Executive Productivity Agent (Veridian Corp)
-> **Assignment 1 — Take-Home Submission for AIONOS Interview**  
+
+> **AIONOS Assignment 1 — Executive Productivity Agent**  
 > **Built for:** Arjun Malhotra (VP Sales)  
-> **Timeframe:** Week of Monday, 21 September 2026 – Friday, 25 September 2026  
+> **Timeframe:** 21–25 September 2026
 
 ---
 
-## Live Demo
+## 🚀 Live Demo
 
 🔗 https://executive-productivity-agent.onrender.com/
 
 The project is deployed on Render and can be tested using the link above.
 
-> **For live development:**  
-> Run `npm run dev` to start both Vite (client on `http://localhost:5173`) and Express (server on `http://localhost:5000`) simultaneously.
+---
+
+## 📌 About
+
+A simple productivity assistant that helps an executive track:
+
+- Commitments and action items
+- Overdue tasks
+- Unassigned work
+- Upcoming meetings
+- Completed tasks
+- People waiting on actions
+
+It also includes an **Ask Agent** section for questions about the executive's work.
 
 ---
 
-## 📖 How It Works 
+## 🏗️ Tech Stack
 
-This project is built using a clean, simple **Full-Stack architecture (React + Node.js/Express)** with **100% grounding** in the assignment data pack (zero hallucinations):
-
-1. **`server/data/data.js`**: Contains structured JSON modeling all facts from the Data Pack:
-   - Leadership Sync transcript (Monday 9:00 AM)
-   - 4 Team Calendars (Arjun, Neha, Raghav, Divya)
-   - 5 Email Threads (25 total emails)
-   - 2 Voice Notes dictated by Arjun for himself
-2. **`server/index.js`**: A lightweight Express server with two clean endpoints:
-   - `GET /api/dashboard`: Sends tasks, meetings, and raw source summaries to the frontend.
-   - `POST /api/ask`: Takes Arjun's question, identifies the topic (e.g. attention, overdue, waiting, conflict, lease), and returns the exact grounded answer with source citations.
-3. **`client/src/App.jsx`**: A clean React dashboard showing:
-   - **Urgent Priority Banners** (Overdue items, Unassigned risks, Calendar conflicts)
-   - **Interactive AI Agent Q&A** with quick clickable question chips
-   - **Action Items Grid** with status pills, deadlines, and source evidence
-   - **Weekly Calendar** with visual conflict highlighting
-   - **Data Pack Inspector** to view the raw transcript, emails, and voice memos
+- React.js + Vite
+- Node.js + Express.js
+- JavaScript
+- CSS
+- Render
 
 ---
 
-## 🎯 Key Domain Insights from the Assignment Data
+## 🔄 How It Works
 
-When asked by the interviewer, here are the 4 critical findings derived from the data pack:
-
-1. **🔴 Overdue Deliverable — Updated Vendor List for Raghav Sethi**
-   - *Trail:* Arjun promised it at Monday sync (due Tue EOD) → postponed to Tue morning → postponed to Wed morning → Raghav checked in Wed 8:45 AM.
-   - *Finding:* Deliverable was never sent. Raghav is actively waiting on Arjun.
-
-2. **🔴 Unassigned Risk — Mumbai Office Lease Renewal**
-   - *Trail:* Facilities sent company-wide reminders establishing a deadline of **Friday, 25 September EOD**. Raghav asked Arjun on Thursday 4:45 PM who is handling it.
-   - *Finding:* Still unassigned. Arjun should delegate or sign this during his **Friday 10:00 AM Facilities Check-in**.
-
-3. **🟡 Calendar Conflict — Thursday 9:30 AM Double-Booking**
-   - *Trail:* Arjun has **Board Prep Session (9:00–10:00 AM)** on Thursday. Neha scheduled the **Q3 Campaign Deck Review for 9:30 AM**.
-   - *Finding:* 30-minute double-booking. Recommended fix is moving the deck review to 10:00 AM Thursday.
-
-4. **✅ Completed Deliverable — July Expense Variance Report**
-   - *Trail:* Divya Rao delivered the report on Wednesday at 6:00 PM; Arjun confirmed receipt at 6:10 PM. Ready for board prep.
-
----
+```text
+Assignment Data
+      ↓
+Structured Data
+      ↓
+Node.js + Express
+      ↓
+React Dashboard
+      ↓
+Ask Agent
