@@ -5,30 +5,18 @@
 
 ---
 
-## ⚡ Quick Start (Run in 1 Command)
+## Live Demo
 
-```bash
-# 1. Clone & enter the folder
-git clone <your-repo-url>
-cd executive-productivity-agent
+🔗 https://executive-productivity-agent.onrender.com/
 
-# 2. Install dependencies
-npm install
-npm --prefix server install
-npm --prefix client install
-
-# 3. Build & start
-npm run build
-npm start
-```
-Open **[http://localhost:5000](http://localhost:5000)** in your browser!
+The project is deployed on Render and can be tested using the link above.
 
 > **For live development:**  
 > Run `npm run dev` to start both Vite (client on `http://localhost:5173`) and Express (server on `http://localhost:5000`) simultaneously.
 
 ---
 
-## 📖 How It Works (Beginner-Friendly Explanation)
+## 📖 How It Works 
 
 This project is built using a clean, simple **Full-Stack architecture (React + Node.js/Express)** with **100% grounding** in the assignment data pack (zero hallucinations):
 
